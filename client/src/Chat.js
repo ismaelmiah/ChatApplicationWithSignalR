@@ -4,8 +4,8 @@ import ChatWindow from './ChatWindow';
 import ChatInput from './ChatInput';
 
 const Chat = () => {
-    const [ connection, setConnection ] = useState(null);
-    const [ chat, setChat ] = useState([]);
+    const [connection, setConnection] = useState(null);
+    const [chat, setChat] = useState([]);
     const latestChat = useRef(null);
 
     latestChat.current = chat;
@@ -24,11 +24,11 @@ const Chat = () => {
             connection.start()
                 .then(result => {
                     console.log('Connected!');
-    
+
                     connection.on('ReceiveMessage', message => {
                         const updatedChat = [...latestChat.current];
                         updatedChat.push(message);
-                    
+
                         setChat(updatedChat);
                     });
                 })
@@ -44,9 +44,16 @@ const Chat = () => {
 
         if (connection.connectionStarted) {
             try {
-                await connection.send('SendMessage', chatMessage);
+                //await connection.send('SendMessage', chatMessage);
+                await fetch('https://localhost:44301/chat/messages', {
+                    method: 'POST',
+                    body: JSON.stringify(chatMessage),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
             }
-            catch(e) {
+            catch (e) {
                 console.log(e);
             }
         }
@@ -59,7 +66,7 @@ const Chat = () => {
         <div>
             <ChatInput sendMessage={sendMessage} />
             <hr />
-            <ChatWindow chat={chat}/>
+            <ChatWindow chat={chat} />
         </div>
     );
 };

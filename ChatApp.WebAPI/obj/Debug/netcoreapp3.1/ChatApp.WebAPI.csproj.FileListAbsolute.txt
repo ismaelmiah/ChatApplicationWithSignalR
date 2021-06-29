@@ -11,7 +11,6 @@ D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\bin\Debug\netcoreapp3.1\Mi
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\obj\Debug\netcoreapp3.1\ChatApp.WebAPI.csproj.AssemblyReference.cache
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\obj\Debug\netcoreapp3.1\ChatApp.WebAPI.AssemblyInfoInputs.cache
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\obj\Debug\netcoreapp3.1\ChatApp.WebAPI.AssemblyInfo.cs
 D:\Projects\ChatApplicationWithSignalR\ChatApp.WebAPI\obj\Debug\netcoreapp3.1\ChatApp.WebAPI.csproj.CoreCompileInputs.cache
