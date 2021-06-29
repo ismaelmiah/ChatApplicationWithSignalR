@@ -1,3 +1,4 @@
+using ChatApp.WebAPI.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,19 @@ namespace ChatApp.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSignalR();
             services.AddSwaggerGen();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("ClientPermission", policy =>
+                {
+                    policy.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .WithOrigins("http://localhost:3000")
+                        .AllowCredentials();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,7 +56,7 @@ namespace ChatApp.WebAPI
                 c.RoutePrefix = string.Empty;
             });
             app.UseHttpsRedirection();
-
+            app.UseCors("ClientPermission");
             app.UseRouting();
 
             app.UseAuthorization();
@@ -51,6 +64,7 @@ namespace ChatApp.WebAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/hubs/chat");
             });
         }
     }
