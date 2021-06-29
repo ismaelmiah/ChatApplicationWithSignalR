@@ -1,5 +1,5 @@
 import React from 'react';
-import Message from './Message/Message';
+import Message from './Message';
 
 const ChatWindow = (props) => {
     const chat = props.chat.map(m => <Message
