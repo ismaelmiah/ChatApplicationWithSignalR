@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "MaohwUFH8paxxWHZOm52h7FeI8DoL1q6ALa2nlS8QG0W4+Jrm4uz6zTwWMAMUXJqNVsZoPlxgT04Fflne5euIw==",
+  "dgSpecHash": "lLxbpaRI65VNabQ/ICEY07WzOy3413b/WSYSWLARTgT29c1KVpK6lYSbNOZgU7vOI1epB1hlikNEhZQJihY7SA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ChatApplicationWithSignalR\\ChatApp.WebAPI\\ChatApp.WebAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ismai\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
+  ],
   "logs": []
 }
