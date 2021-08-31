@@ -1,4 +1,4 @@
-# Real-time ASP.NET with SignalR - ReactJS Chat Application
+# Real-time ASP.NET Core with SignalR - ReactJS Chat Application
 
 ### WebSockets are a great technology when you need to keep your clients synchronized with changes from your server.
 ### This is really useful when dealing with messages and notifications that need to be seen in real-time.
